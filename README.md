@@ -1,2 +1,2 @@
-# svelte-baked-cookie
-🍪 Universal accessible hard-baked cookies for SvelteKit
+<!----- BEGIN GHOST DOCS HEADER ----->
+<!----- END GHOST DOCS HEADER ----->
