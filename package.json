@@ -63,7 +63,7 @@
     "@playwright/test": "1.40.1",
     "@sveltejs/adapter-cloudflare": "2.3.4",
     "svelte-highlight-switcher": "0.0.1",
-    "@sveltejs/kit": "1.27.6",
+    "@sveltejs/kit": "1.27.7",
     "svelte": "4.2.8",
     "svelte-highlight": "7.4.2",
     "typescript": "5.3.2",
