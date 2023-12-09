@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@jill64/transform':
-    specifier: 0.0.2
-    version: 0.0.2
+    specifier: 1.0.0
+    version: 1.0.0
   '@types/cookie':
     specifier: 0.6.0
     version: 0.6.0
@@ -713,6 +713,11 @@ packages:
 
   /@jill64/transform@0.0.2:
     resolution: {integrity: sha512-WA/hYk3f96XF2aLICBqtwiX+VFa/hFFnATO8xP6NT+ZohFHZfXV7I+gdE4+US0uyXDE8ykrS1KC34qith6eg7Q==}
+    dev: true
+
+  /@jill64/transform@1.0.0:
+    resolution: {integrity: sha512-pwyMLSxedzcOnSqd9ylutdsV8/9hejjwbox65uJQBDVOy7m+QS4OUYi1+VXsxG3do1l58E2WrXgzB3d7sxUMKQ==}
+    dev: false
 
   /@jill64/typed-storage@2.0.5:
     resolution: {integrity: sha512-34O8BaVVTiHNPyRlKlHU2H7n0TU6JyFdqkpAhdIkFRYebVMoRSYoUhcAowVAP9qvutjFVxhHKBEGQxpECdBIHg==}
