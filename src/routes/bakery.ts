@@ -1,7 +1,6 @@
 // bakery.js
 import { bakery } from 'svelte-baked-cookie'
-import { json } from 'ts-serde/object'
-import { number, string } from 'ts-serde/primitive'
+import { json, number, string } from 'svelte-baked-cookie/serde'
 
 export const { bake, rebake } = bakery(
   {
