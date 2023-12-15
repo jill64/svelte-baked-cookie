@@ -1,7 +1,6 @@
 import { browser, dev } from '$app/environment'
 import { transform } from '@jill64/transform'
 import type { Cookies } from '@sveltejs/kit'
-import type { CookieSerializeOptions } from 'cookie'
 import cookie from 'cookie'
 import { writable, type Writable } from 'svelte/store'
 import type { Serde } from 'ts-serde'
@@ -17,12 +16,12 @@ export const bakery =
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   <Schema extends Record<string, Serde<any>>>(
     schema: Schema,
-    options?: CookieSerializeOptions
+    options?: Parameters<Cookies['set']>[2]
   ) => {
-    const opts: CookieSerializeOptions = {
+    const opts: Parameters<Cookies['set']>[2] = {
       secure: dev ? false : true,
-      sameSite: 'lax',
       path: '/',
+      sameSite: 'lax',
       maxAge: 60 * 60 * 24 * 365, // 1 year,
       httpOnly: false,
       ...options
