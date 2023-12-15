@@ -1,4 +1,6 @@
-export const serverSample = `import { bake } from './bakery.js'
+export const serverSample = `
+// +layout.server.js
+import { bake } from 'bakery.js'
 
 export const load = ({ cookies }) => {
   const { bakedCookies, pie } = bake(cookies)

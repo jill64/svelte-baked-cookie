@@ -1,7 +1,8 @@
 <script lang="ts">
   import { browser } from '$app/environment'
-  import { Highlight, HighlightSvelte } from 'svelte-highlight'
-  import { typescript } from 'svelte-highlight/languages'
+  import { Highlight, HighlightSvelte } from '@jill64/npm-demo-layout/highlight'
+  import { typescript } from '@jill64/npm-demo-layout/highlight/languages'
+  import { Decimal } from '@jill64/svelte-input'
   import { rebake } from './bakery.js'
   import bakerySource from './bakery.js?raw'
   import { sample } from './sample.js'
@@ -19,26 +20,26 @@
   Render by {browser ? 'browser' : 'server'}
 </h2>
 
-<main class="flex flex-col">
-  <code>key1: <input bind:value={$key1} placeholder="key1" /></code>
-  <code>key2: <input bind:value={$key2} type="number" /></code>
+<main class="flex flex-col my-4 gap-4">
+  <code>
+    key1:
+    <input
+      bind:value={$key1}
+      class="border-bottom py-1 border-gray-400 dark:border-gray-600 focus-under focus:border-purple-400 dark:focus:border-purple-900"
+      placeholder="key1"
+    />
+  </code>
+  <code>
+    key2:
+    <Decimal
+      Class="border border-gray-400 dark:border-gray-600 p-1 rounded"
+      buttonClass="border p-2 border-gray-400 dark:border-gray-600 p-1 rounded-full"
+      bind:value={$key2}
+    />
+  </code>
   <code>key3: {JSON.stringify($key3)}</code>
 </main>
 
-bakery.js
-<Highlight
-  code={bakerySource.replace('$lib/bakery', 'svelte-baked-cookie').trim()}
-  language={typescript}
-/>
-
-+layout.server.js
-<Highlight code={serverSample.trim()} language={typescript} />
-
-+layout.svelte
+<Highlight code={bakerySource} language={typescript} />
+<Highlight code={serverSample} language={typescript} />
 <HighlightSvelte code={sample} />
-
-<style lang="postcss">
-  code {
-    @apply m-2;
-  }
-</style>

@@ -1,4 +1,5 @@
-import { bakery } from '$lib/bakery'
+// bakery.js
+import { bakery } from 'svelte-baked-cookie'
 import { json } from 'ts-serde/object'
 import { number, string } from 'ts-serde/primitive'
 
