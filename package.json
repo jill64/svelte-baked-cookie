@@ -29,13 +29,14 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/jill64/svelte-baked-cookie.git",
-    "image": "https://opengraph.githubassets.com/747be53581f52c4f976313aec941e9100f4a5e7c9e2600c9e99e7b1c533c53ac/jill64/svelte-baked-cookie"
+    "image": "https://opengraph.githubassets.com/465964f0ec6501eeae23be3a0450bda59970297579295b5d310b7047db77a973/jill64/svelte-baked-cookie"
   },
   "publishConfig": {
     "access": "public"
   },
   "keywords": [
     "cookie",
+    "isomophism",
     "sveltekit",
     "type-safe"
   ],
