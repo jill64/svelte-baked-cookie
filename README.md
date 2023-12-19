@@ -134,3 +134,11 @@ export const load = ({ cookies }) => {
 ```
 
 This is optional, but it provides full consistency and typed cookie access to the application.
+
+<!----- BEGIN GHOST DOCS FOOTER ----->
+
+## License
+
+MIT
+
+<!----- END GHOST DOCS FOOTER ----->
