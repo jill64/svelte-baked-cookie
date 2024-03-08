@@ -35,8 +35,8 @@ devDependencies:
     specifier: 1.7.7
     version: 1.7.7(@sveltejs/kit@2.5.3)(svelte@4.2.12)
   '@jill64/svelte-input':
-    specifier: 1.6.16
-    version: 1.6.16(svelte@4.2.12)
+    specifier: 1.6.17
+    version: 1.6.17(svelte@4.2.12)
   '@jill64/svelte-tailwind':
     specifier: 1.2.7
     version: 1.2.7
@@ -467,8 +467,8 @@ packages:
       svelte: 4.2.12
     dev: true
 
-  /@jill64/svelte-input@1.6.16(svelte@4.2.12):
-    resolution: {integrity: sha512-YNZgDGuYDKMdxz6UipgDqbESAeI1zX67xoU9TRqC8QSadvUeP1n7wRjzVMo3DfAtb5ObHASmuLpnNslaFmdZKA==}
+  /@jill64/svelte-input@1.6.17(svelte@4.2.12):
+    resolution: {integrity: sha512-96JMzekbSCMF/FZHniDNcTIN8q3IgiqNT9/en/olIo2UVN24m153ysQyRnQwvElz1oYLdaypksxCn5DVeCb0XQ==}
     peerDependencies:
       svelte: ^4.0.0
     dependencies:
