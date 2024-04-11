@@ -15,8 +15,8 @@ dependencies:
     specifier: 0.6.0
     version: 0.6.0
   ts-serde:
-    specifier: 1.0.3
-    version: 1.0.3
+    specifier: 1.0.4
+    version: 1.0.4
 
 devDependencies:
   '@jill64/eslint-config-svelte':
@@ -3809,6 +3809,13 @@ packages:
     resolution: {integrity: sha512-/p/FHsZMnwdEzxPwyEnypmgML6ZZZ41fVxwxTehNOXb64c1YKDqn/vkOMnQTuV9wOWcSOI77qsl9Ua8Z9PNhpg==}
     dependencies:
       devalue: 4.3.2
+    dev: true
+
+  /ts-serde@1.0.4:
+    resolution: {integrity: sha512-dKDQS7gNile4Py/Us8CROs5bs5/oM0KCocma1vAETIsz+Xs/LHRobpbeyWZyNM/mfX3JyQqSfif/8yIfVfmNCQ==}
+    dependencies:
+      devalue: 4.3.2
+    dev: false
 
   /tslib@1.14.1:
     resolution: {integrity: sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==}
