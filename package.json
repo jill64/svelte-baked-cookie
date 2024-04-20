@@ -29,7 +29,7 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/jill64/svelte-baked-cookie.git",
-    "image": "https://opengraph.githubassets.com/25156e7b9fe1863a7b4f8a096bde8be1e3ff1bf4c865b21b17bbb2667ae38cc7/jill64/svelte-baked-cookie"
+    "image": "https://opengraph.githubassets.com/7457b6401d30c7826b05b931132281236b9cc7400dd8623c89163a75433a7fce/jill64/svelte-baked-cookie"
   },
   "publishConfig": {
     "access": "public"
