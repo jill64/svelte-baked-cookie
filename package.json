@@ -1,13 +1,13 @@
 {
   "name": "svelte-baked-cookie",
   "description": "🍪 Universal accessible hard-baked cookies for SvelteKit",
-  "version": "1.0.22",
+  "version": "1.0.23",
   "main": "dist/index.js",
   "type": "module",
   "license": "MIT",
   "author": {
     "name": "jill64",
-    "email": "intents.turrets0h@icloud.com",
+    "email": "contact@jill64.dev",
     "url": "https://github.com/jill64",
     "image": "https://avatars.githubusercontent.com/u/143883742?v=4"
   },
@@ -29,7 +29,7 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/jill64/svelte-baked-cookie.git",
-    "image": "https://opengraph.githubassets.com/8e6771bc4449cae82283eb03d201cf42871e78e899c5eb6881ca942b9b21bb7d/jill64/svelte-baked-cookie"
+    "image": "https://opengraph.githubassets.com/2f680632373085a6fcd669dd01a776e79367346fdf9544299cd3c50025814301/jill64/svelte-baked-cookie"
   },
   "publishConfig": {
     "access": "public"
@@ -78,6 +78,6 @@
     "@jill64/transform": "1.0.2",
     "@types/cookie": "0.6.0",
     "cookie": "0.6.0",
-    "ts-serde": "1.0.5"
+    "ts-serde": "1.0.6"
   }
 }
