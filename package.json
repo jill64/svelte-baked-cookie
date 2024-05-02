@@ -1,7 +1,7 @@
 {
   "name": "svelte-baked-cookie",
   "description": "🍪 Universal accessible hard-baked cookies for SvelteKit",
-  "version": "1.0.23",
+  "version": "1.0.24",
   "main": "dist/index.js",
   "type": "module",
   "license": "MIT",
@@ -29,7 +29,7 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/jill64/svelte-baked-cookie.git",
-    "image": "https://opengraph.githubassets.com/15659d98fdcce576296cceb3471590d3c86aa14e06b5b2b7db391feb79dd29cc/jill64/svelte-baked-cookie"
+    "image": "https://opengraph.githubassets.com/68e6ee380b35b70e703eab20b0ec1b3ff62de42d69c73274e7ff3807f3ddd07f/jill64/svelte-baked-cookie"
   },
   "publishConfig": {
     "access": "public"
@@ -59,7 +59,7 @@
   "devDependencies": {
     "@jill64/eslint-config-svelte": "1.2.24",
     "@jill64/npm-demo-layout": "1.0.187",
-    "@jill64/playwright-config": "2.2.5",
+    "@jill64/playwright-config": "2.2.6",
     "@jill64/prettier-config": "1.0.0",
     "@jill64/sentry-sveltekit-cloudflare": "1.7.11",
     "@jill64/svelte-input": "1.6.26",
