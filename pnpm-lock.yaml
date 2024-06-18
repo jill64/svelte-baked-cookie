@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@jill64/transform':
-        specifier: 1.0.2
-        version: 1.0.2
+        specifier: 1.0.3
+        version: 1.0.3
       '@types/cookie':
         specifier: 0.6.0
         version: 0.6.0
@@ -678,6 +678,9 @@ packages:
 
   '@jill64/transform@1.0.2':
     resolution: {integrity: sha512-pDbIK3cXRT9YTylnynvWRBmM7WjLtkuqRJ9Y1EwQAytZ+rf678wtevGAljGrMuGk/NtELuiQLVSbGkVFXVLFSg==}
+
+  '@jill64/transform@1.0.3':
+    resolution: {integrity: sha512-NdnqxL3yIE3vx6WIALtUWHktwP2igo40iIZb9q9mc2ionDOyNpq37HbdiDy/z1x/e95Czty6N3dicrGtuCOf+A==}
 
   '@jill64/typed-storage@2.2.3':
     resolution: {integrity: sha512-lcgKAHfkI2X2gmghcRHxFZO+0Sf+FHVstNXUsDHdnt/NE1AhX145OV2ma/WZojRSDkE4w2Qc9ELiTSmn5mT1Eg==}
@@ -2786,6 +2789,8 @@ snapshots:
       tailwindcss: 3.4.4
 
   '@jill64/transform@1.0.2': {}
+
+  '@jill64/transform@1.0.3': {}
 
   '@jill64/typed-storage@2.2.3':
     dependencies:
