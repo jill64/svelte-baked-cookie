@@ -29,7 +29,7 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/jill64/svelte-baked-cookie.git",
-    "image": "https://opengraph.githubassets.com/a13addeb0fb881f79928beba573219279c0416b99c891ab877d1a23c955e66e9/jill64/svelte-baked-cookie"
+    "image": "https://opengraph.githubassets.com/19ac88b5d5759945b710a78bba3c91137bd7e7aec79387af724ae0d968d27867/jill64/svelte-baked-cookie"
   },
   "publishConfig": {
     "access": "public"
@@ -63,7 +63,7 @@
     "@jill64/prettier-config": "1.0.0",
     "@jill64/sentry-sveltekit-cloudflare": "1.7.14",
     "@jill64/svelte-input": "1.6.31",
-    "@jill64/svelte-tailwind": "1.2.38",
+    "@jill64/svelte-tailwind": "1.2.39",
     "@jill64/universal-sanitizer": "1.2.13",
     "@playwright/test": "1.44.1",
     "@sveltejs/adapter-cloudflare": "4.5.0",
