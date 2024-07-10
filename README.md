@@ -25,6 +25,7 @@ npm i svelte-baked-cookie
 ## Usage
 
 1.  Use the `bakery` function to define the cookie type and get `bake` and `rebake`.
+See [ts-serde](https://github.com/jill64/ts-serde#readme) for more information on type guard
 
 ```ts
 // bakery.js
