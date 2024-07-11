@@ -18,8 +18,8 @@ importers:
         specifier: 0.6.0
         version: 0.6.0
       ts-serde:
-        specifier: 1.0.6
-        version: 1.0.6
+        specifier: 1.0.7
+        version: 1.0.7
     devDependencies:
       '@jill64/eslint-config-svelte':
         specifier: 1.2.40
@@ -2001,6 +2001,9 @@ packages:
 
   ts-serde@1.0.6:
     resolution: {integrity: sha512-nHuo7jHWP6kMdB2AuVKKZMKA1qkypL097QJq8y30EvATmphPmOcI5IBvVD/11VnsQKp+lrSkUuZaRDSaVSmPTA==}
+
+  ts-serde@1.0.7:
+    resolution: {integrity: sha512-uKLELc4t1+3eufCypJFFIPHfjtEvTzeWKcTSMbXvwrAqupf0VLh80L7iZxCn7zHbA77BhX3Z8if52hP65ruebw==}
 
   tslib@2.6.2:
     resolution: {integrity: sha512-AEYxH93jGFPn/a2iVAwW87VuUIkR1FVUKB77NwMF7nBTDkDrrT/Hpt/IrCJ0QXhW27jTBDcf5ZY7w6RiqTMw2Q==}
@@ -4090,6 +4093,10 @@ snapshots:
   ts-interface-checker@0.1.13: {}
 
   ts-serde@1.0.6:
+    dependencies:
+      devalue: 5.0.0
+
+  ts-serde@1.0.7:
     dependencies:
       devalue: 5.0.0
 
