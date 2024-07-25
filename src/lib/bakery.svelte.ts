@@ -2,7 +2,6 @@ import { browser, dev } from '$app/environment'
 import { transform } from '@jill64/transform'
 import type { Cookies } from '@sveltejs/kit'
 import cookie from 'cookie'
-import { writable, type Writable } from 'svelte/store'
 import type { Serde } from 'ts-serde'
 
 type Pie = Record<string, string>
@@ -60,22 +59,28 @@ export const bakery =
         (pie ?? (browser ? cookie.parse(document.cookie) : {}))[key] || ''
 
       return transform(schema, ([key, { serialize, deserialize }]) => {
-        const store = writable(deserialize(getCookie(key)))
+        let store = $state(deserialize(getCookie(key)))
 
         const set = (value: unknown) => {
-          store.set(value)
+          store = value
           document.cookie = cookie.serialize(key, serialize(value), opts)
         }
 
-        const cookieStore: Writable<unknown> = {
-          subscribe: store.subscribe,
-          set,
-          update: (fn) => set(fn(getCookie(key)))
-        }
-
-        return [key, cookieStore]
+        return [
+          key,
+          {
+            get value() {
+              return store
+            },
+            set value(value: unknown) {
+              set(value)
+            }
+          }
+        ]
       }) as {
-        [Key in keyof Schema]: Writable<RSerde<Schema[Key]>>
+        [Key in keyof Schema]: {
+          value: RSerde<Schema[Key]>
+        }
       }
     }
 

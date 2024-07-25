@@ -5,11 +5,7 @@ import { vitePreprocess } from '@sveltejs/vite-plugin-svelte'
 const config = {
   preprocess: vitePreprocess(),
   kit: {
-    adapter: adapter(),
-    alias: {
-      'svelte-baked-cookie/serde': './dist/serde.js',
-      'svelte-baked-cookie': './dist/index.js'
-    }
+    adapter: adapter()
   }
 }
 

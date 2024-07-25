@@ -1,5 +1,6 @@
-import { bakery } from '$lib'
-import { json, number, string } from '$lib/serde'
+export const bakerySample = `// bakery.js
+import { bakery } from 'svelte-baked-cookie'
+import { json, number, string } from 'svelte-baked-cookie/serde'
 
 export const { bake, rebake } = bakery(
   {
@@ -16,3 +17,4 @@ export const { bake, rebake } = bakery(
     secure: false
   }
 )
+`
