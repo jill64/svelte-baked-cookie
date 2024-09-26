@@ -18,8 +18,8 @@ importers:
         specifier: 0.6.0
         version: 0.6.0
       ts-serde:
-        specifier: 1.0.7
-        version: 1.0.7
+        specifier: 1.0.8
+        version: 1.0.8
     devDependencies:
       '@jill64/eslint-config-svelte':
         specifier: 1.3.16
@@ -1100,6 +1100,9 @@ packages:
   devalue@5.0.0:
     resolution: {integrity: sha512-gO+/OMXF7488D+u3ue+G7Y4AA3ZmUnB3eHJXmBTgNHvr4ZNzl36A0ZtG+XCRNYCkYx/bFmw4qtkoFLa+wSrwAA==}
 
+  devalue@5.1.1:
+    resolution: {integrity: sha512-maua5KUiapvEwiEAe+XnlZ3Rh0GD+qI1J/nb9vrJc3muPXvcF/8gXYTWF76+5DAqHyDUtOIImEuo0YKE9mshVw==}
+
   didyoumean@1.2.2:
     resolution: {integrity: sha512-gxtyfqMg7GKyhQmb056K7M3xszy/myH8w+B4RT+QXBQsvAOdc3XymqDDPHx1BgPgsdAA5SIifona89YtRATDzw==}
 
@@ -2001,6 +2004,9 @@ packages:
 
   ts-serde@1.0.7:
     resolution: {integrity: sha512-uKLELc4t1+3eufCypJFFIPHfjtEvTzeWKcTSMbXvwrAqupf0VLh80L7iZxCn7zHbA77BhX3Z8if52hP65ruebw==}
+
+  ts-serde@1.0.8:
+    resolution: {integrity: sha512-YUBuQDm5uIpCIklGrU0by8uf4ZLBkIO1/mf7Gha83qn2iz54p/pmlXQanTaQZBSWB0EiJKQUo/ur72XvQpStAQ==}
 
   tslib@2.6.2:
     resolution: {integrity: sha512-AEYxH93jGFPn/a2iVAwW87VuUIkR1FVUKB77NwMF7nBTDkDrrT/Hpt/IrCJ0QXhW27jTBDcf5ZY7w6RiqTMw2Q==}
@@ -3140,6 +3146,8 @@ snapshots:
 
   devalue@5.0.0: {}
 
+  devalue@5.1.1: {}
+
   didyoumean@1.2.2: {}
 
   dir-glob@3.0.1:
@@ -4094,6 +4102,10 @@ snapshots:
   ts-serde@1.0.7:
     dependencies:
       devalue: 5.0.0
+
+  ts-serde@1.0.8:
+    dependencies:
+      devalue: 5.1.1
 
   tslib@2.6.2: {}
 
