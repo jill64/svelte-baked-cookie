@@ -29,7 +29,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jill64/svelte-baked-cookie.git",
-    "image": "https://opengraph.githubassets.com/2e9eed8dd7069a4cd3af364fe6d0240832e327441c9a6d4b2a46fec5c4c207b2/jill64/svelte-baked-cookie"
+    "image": "https://opengraph.githubassets.com/3bc4d36ed066dcddc002fb8258d84a97b807fdc823ad1371b3bca1dd737d9c03/jill64/svelte-baked-cookie"
   },
   "publishConfig": {
     "access": "public"
@@ -69,7 +69,7 @@
     "@sveltejs/adapter-cloudflare": "4.8.0",
     "@sveltejs/kit": "2.8.3",
     "@sveltejs/vite-plugin-svelte": "3.1.2",
-    "svelte": "5.7.0",
+    "svelte": "5.7.1",
     "typescript": "5.7.2",
     "vite": "5.4.11",
     "vitest": "2.1.2"
