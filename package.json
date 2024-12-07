@@ -1,7 +1,7 @@
 {
   "name": "svelte-baked-cookie",
   "description": "🍪 Universal accessible hard-baked cookies for SvelteKit",
-  "version": "1.0.39",
+  "version": "1.1.0",
   "main": "dist/index.js",
   "type": "module",
   "license": "MIT",
@@ -29,7 +29,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jill64/svelte-baked-cookie.git",
-    "image": "https://opengraph.githubassets.com/0e021a1a47b5da9d4fbdb3971e44918e5e138b797c0223b9a8347b215a06ed25/jill64/svelte-baked-cookie"
+    "image": "https://opengraph.githubassets.com/085fb4801e945678f5b9c802b18e1e57b3264818ec9313170edfa2f5c224df07/jill64/svelte-baked-cookie"
   },
   "publishConfig": {
     "access": "public"
@@ -68,10 +68,10 @@
     "@playwright/test": "1.49.0",
     "@sveltejs/adapter-cloudflare": "4.8.0",
     "@sveltejs/kit": "2.8.3",
-    "@sveltejs/vite-plugin-svelte": "3.1.2",
+    "@sveltejs/vite-plugin-svelte": "5.0.1",
     "svelte": "5.8.1",
     "typescript": "5.7.2",
-    "vite": "5.4.11",
+    "vite": "6.0.3",
     "vitest": "2.1.2"
   },
   "dependencies": {
