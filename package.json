@@ -75,7 +75,7 @@
     "vitest": "2.1.8"
   },
   "dependencies": {
-    "@jill64/transform": "1.0.3",
+    "@jill64/transform": "1.0.4",
     "@types/cookie": "0.6.0",
     "cookie": "0.7.2",
     "ts-serde": "1.0.8"
