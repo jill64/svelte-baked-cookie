@@ -37,8 +37,8 @@ importers:
         specifier: 2.0.1
         version: 2.0.1(@sveltejs/kit@2.15.1(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.16.0)(vite@6.0.6(@types/node@20.11.27)(jiti@1.21.6)(yaml@2.4.2)))(svelte@5.16.0)(vite@6.0.6(@types/node@20.11.27)(jiti@1.21.6)(yaml@2.4.2)))(svelte@5.16.0)
       '@jill64/svelte-input':
-        specifier: 1.6.37
-        version: 1.6.37(svelte@5.16.0)
+        specifier: 2.0.0
+        version: 2.0.0(svelte@5.16.0)
       '@jill64/svelte-tailwind':
         specifier: 1.2.69
         version: 1.2.69(jiti@1.21.6)(yaml@2.4.2)
@@ -664,8 +664,8 @@ packages:
       '@sveltejs/kit': ^2.0.0
       svelte: ^4.0.0
 
-  '@jill64/svelte-input@1.6.37':
-    resolution: {integrity: sha512-TpH/h4u45wDCHNBat67Ysbd4DqtnEgEsKDRR2BKaN1Y/nRvYQaH4U/A2oCr4tS8UkrOp+m+o87NLBYMq9BNirw==}
+  '@jill64/svelte-input@2.0.0':
+    resolution: {integrity: sha512-oFYwb3+DfF2MjYCqFQWTWJ1O6st7fBEba178YX0x3i/UxJG6vLToGpAWFD3OcU2F5B+ykYHDXpH9Nd6MLCEJtA==}
     peerDependencies:
       svelte: ^4.0.0
 
@@ -673,6 +673,11 @@ packages:
     resolution: {integrity: sha512-qHABrcIpVcg6JEhPD8N5jchF9FEOr02GEwsoTxO4s4V6pZC/3FsCxKwsW2PwNKS842+1iXRuea+n3FyP5PaBCQ==}
     peerDependencies:
       svelte: ^4.0.0
+
+  '@jill64/svelte-observer@0.0.1':
+    resolution: {integrity: sha512-M+lfGrvfYM9C9svCKXvywurORtBBeSH61eyJ092yJpGlDawIiE/VWu5/L5Drr1wYUs/p176+NEsbzKnjWHgS1Q==}
+    peerDependencies:
+      svelte: ^5.0.0
 
   '@jill64/svelte-ogp@1.1.31':
     resolution: {integrity: sha512-LuDs//eP+n+wJ9IiXmqRwElbEz+xUI2IuaBdqFdbls5m6EMieD5wBbTvAb9S0kTmSjTqBjv/bulXpxdmKUCBvA==}
@@ -2766,14 +2771,18 @@ snapshots:
       '@sveltejs/kit': 2.15.1(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.16.0)(vite@6.0.6(@types/node@20.11.27)(jiti@1.21.6)(yaml@2.4.2)))(svelte@5.16.0)(vite@6.0.6(@types/node@20.11.27)(jiti@1.21.6)(yaml@2.4.2))
       svelte: 5.16.0
 
-  '@jill64/svelte-input@1.6.37(svelte@5.16.0)':
+  '@jill64/svelte-input@2.0.0(svelte@5.16.0)':
     dependencies:
-      '@jill64/async-observer': 1.2.5
+      '@jill64/svelte-observer': 0.0.1(svelte@5.16.0)
       bignumber.js: 9.1.2
       svelte: 5.16.0
       svelte-loading-spinners: 0.3.6
 
   '@jill64/svelte-menu@1.0.26(svelte@5.16.0)':
+    dependencies:
+      svelte: 5.16.0
+
+  '@jill64/svelte-observer@0.0.1(svelte@5.16.0)':
     dependencies:
       svelte: 5.16.0
 
