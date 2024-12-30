@@ -8,12 +8,11 @@
   import { sample } from './sample.js'
   import { serverSample } from './serverSample'
 
-  export let data
+  let { data } = $props()
 
-  $: ({ pie } = data)
+  let pie = $derived(data.pie)
 
-  $: cookies = rebake(pie)
-  $: ({ key1, key2, key3 } = cookies)
+  let cookies = $derived(rebake(pie))
 </script>
 
 <h2 class="my-2 font-semibold text-xl">
@@ -24,7 +23,7 @@
   <code>
     key1:
     <input
-      bind:value={$key1}
+      bind:value={cookies.key1}
       class="border-bottom py-1 border-gray-400 dark:border-gray-600 focus-under focus:border-purple-400 dark:focus:border-purple-900"
       placeholder="key1"
     />
@@ -34,10 +33,10 @@
     <Decimal
       Class="border border-gray-400 dark:border-gray-600 p-1 rounded"
       buttonClass="border p-2 border-gray-400 dark:border-gray-600 p-1 rounded-full"
-      bind:value={$key2}
+      bind:value={cookies.key2}
     />
   </code>
-  <code>key3: {JSON.stringify($key3)}</code>
+  <code>key3: {JSON.stringify(cookies.key3)}</code>
 </main>
 
 <Highlight code={bakerySource} language={typescript} />

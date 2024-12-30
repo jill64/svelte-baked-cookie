@@ -58,13 +58,13 @@ export const load = ({ cookies }) => {
   const { bakedCookies } = bake(cookies)
 
   // string
-  const str = bakedCookies.key1.get()
+  const str = bakedCookies.key1
 
   // number
-  const num = bakedCookies.key2.set()
+  const num = bakedCookies.key2
 
   // string[]
-  bakedCookies.key3.set(['value', 'set', 'by', 'server'])
+  bakedCookies.key3 = ['value', 'set', 'by', 'server']
 
   return {
     // ...
@@ -81,23 +81,18 @@ export const load = ({ cookies }) => {
 
   const cookies = rebake()
 
-  // key1: Writable<string>
-  // key2: Writable<number>
-  // key3: Writable<string[]>
-  const { key1, key2, key3 } = cookies
+  // key1: string
+  // key2: number
+  // key3: string[]
 
   // string
-  $: console.log($key1)
+  console.log(cookies.key1)
 
   // string
-  $: $key2 = 123
-  // or
-  $: key2.set(123)
+  cookies.key2 = 123
 
   // string[]
-  $: $key3 = ['value', 'set', 'by', 'client']
-  // or
-  $: key3.set(['value', 'set', 'by', 'client'])
+  $key3 = ['value', 'set', 'by', 'client']
 </script>
 ```
 
@@ -125,16 +120,14 @@ export const load = ({ cookies }) => {
 <script>
   import { rebake } from './bakery.js'
 
-  export let data
+  let { data } = $props()
 
-  $: ({ pie } = data)
+  let pie = $derived(data.pie)
 
-  $: cookies = rebake(pie)
-
-  // key1: Writable<string>
-  // key2: Writable<number>
-  // key3: Writable<string[]>
-  $: { key1, key2, key3 } = cookies
+  // key1: string
+  // key2: number
+  // key3: string[]
+  let cookies = $derived(rebake(pie))
 </script>
 ```
 
