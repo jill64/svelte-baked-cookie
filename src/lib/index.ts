@@ -1,1 +1,1 @@
-export { bakery } from './bakery'
+export { bakery } from './bakery.svelte'
