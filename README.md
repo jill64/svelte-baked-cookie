@@ -92,7 +92,7 @@ export const load = ({ cookies }) => {
   cookies.key2 = 123
 
   // string[]
-  $key3 = ['value', 'set', 'by', 'client']
+  cookies.key3 = ['value', 'set', 'by', 'client']
 </script>
 ```
 
