@@ -68,7 +68,7 @@
     "@jill64/universal-sanitizer": "1.4.0",
     "@playwright/test": "1.49.1",
     "@sveltejs/adapter-cloudflare": "5.0.1",
-    "@sveltejs/kit": "2.16.0",
+    "@sveltejs/kit": "2.16.1",
     "@sveltejs/vite-plugin-svelte": "5.0.3",
     "svelte": "5.19.1",
     "typescript": "5.7.3",
