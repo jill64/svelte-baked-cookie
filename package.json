@@ -51,7 +51,7 @@
     "check": "svelte-kit sync && npx svelte-check",
     "lint": "npm run package && npm run check && npx eslint .",
     "format": "npx @jill64/psx",
-    "test": "playwright test"
+    "test": "npx playwright install --with-deps && playwright test"
   },
   "peerDependencies": {
     "@sveltejs/kit": "^2.0.0",
