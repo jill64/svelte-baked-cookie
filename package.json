@@ -77,6 +77,6 @@
     "@jill64/transform": "1.0.4",
     "@types/cookie": "1.0.0",
     "cookie": "1.0.2",
-    "ts-serde": "1.0.8"
+    "ts-serde": "1.0.9"
   }
 }
